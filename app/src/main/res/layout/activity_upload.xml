@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserProfileDetail"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/UserName"
+        android:textColor="#f1be01"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center" />
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Mobile Number"-->
+        <!--android:id="@+id/UserEmailID"-->
+        <!--android:textSize="16dp"-->
+        <!--android:layout_below="@+id/UserName"-->
+        <!--android:layout_alignLeft="@+id/UserName"-->
+        <!--android:layout_alignStart="@+id/UserName"-->
+        <!--android:gravity="center" />-->
+    </RelativeLayout>
+    <!--<com.android.volley.toolbox.NetworkImageView-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:padding="3dp"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:id="@+id/profilePicture"-->
+        <!--android:layout_marginTop="85dp"-->
+        <!--android:background="#666"-->
+        <!--android:layout_alignTop="@+id/relativeLayout2"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:scaleType="centerCrop"/>-->
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/profilePicture"
+            android:layout_marginTop="85dp"
+            android:background="#666"
+            android:layout_alignTop="@+id/relativeLayout2"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upload"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
